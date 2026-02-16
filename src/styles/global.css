@@ -44,7 +44,7 @@
         }
 
         50% {
-            transform: translateY(-20px);
+            transform: translateY(-10px);
         }
 
         100% {
@@ -53,6 +53,6 @@
     }
 
     .animate-float {
-        animation: float 8s ease-in-out infinite;
+        animation: float 12s ease-in-out infinite;
     }
 }
