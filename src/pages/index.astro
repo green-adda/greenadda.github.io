@@ -1,55 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
 import { Image } from 'astro:assets';
-import heroBg from '../assets/hero-bg.png';
-import workshop1 from '../assets/workshop-1.png';
-import workshop2 from '../assets/workshop-2.png';
-import workshop3 from '../assets/workshop-3.png';
+import card1 from '../assets/eng-intel-card-1.png';
+import card2 from '../assets/eng-intel-card-2.png';
+import card3 from '../assets/eng-intel-card-3.png';
 ---
 
-<Layout title="greenadda | Rooting Tech in Sustainability" description="Greenadda is a community rooting tech in sustainability. We offer workshops, insights, and eco-friendly tech solutions.">
+<Layout title="greenadda | Home to Sustainable Engineering" description="From high-performance web solutions to community-driven eco-initiatives. We root technology in the planet's well-being.">
 	
-	<section class="relative isolate overflow-hidden min-h-[calc(100dvh-4rem)] flex items-center justify-center pb-16 sm:pb-0">
+	<section class="relative isolate overflow-hidden min-h-[calc(100dvh-4rem)] flex flex-col items-center justify-center pb-24 sm:pb-0">
         <div class="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-zinc-950 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:bg-[radial-gradient(#27272a_1px,transparent_1px)]"></div>
         <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80ff80] to-[#86efac] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] animate-float" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80ff80] to-[#86efac] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] animate-float" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
         
-		<div class="mx-auto max-w-7xl px-6 lg:px-8">
-			<div class="mx-auto max-w-2xl text-center">
-				<h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-6xl dark:text-zinc-50 relative z-10 animate-fade-up">
-					Rooting Tech in <span class="bg-gradient-to-r from-lime-500 to-cyan-500 bg-clip-text text-transparent">Sustainability</span>
+		<div class="mx-auto max-w-7xl px-6 lg:px-8 mt-[-4rem]">
+			<div class="mx-auto max-w-5xl text-center">
+
+				<h1 class="text-[clamp(1.5rem,6vw,4.5rem)] font-bold tracking-tight text-zinc-900 dark:text-zinc-50 relative z-10 animate-fade-up">
+					Home <span class="font-normal">to</span> <br class="hidden sm:block" /> <span class="bg-gradient-to-r from-lime-500 to-cyan-500 bg-clip-text text-transparent whitespace-nowrap">Sustainable Engineering</span>
 				</h1>
-				<p class="mt-4 sm:mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-300 relative z-10 animate-fade-up delay-200">
-					Building a greener future through sustainable technology practices, education, and community initiatives. Join us in reducing the digital carbon footprint.
+				<p class="mt-6 text-xl leading-8 text-zinc-600 dark:text-zinc-400 relative z-10 animate-fade-up delay-200 text-balance max-w-2xl mx-auto">
+					From high-performance web solutions to community-driven eco-initiatives. We root technology in the planet's well-being.
 				</p>
-				<div class="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6 relative z-10 animate-fade-up delay-300">
-					<a href="#education" class="rounded-md bg-gradient-to-r from-lime-600 to-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:from-lime-500 hover:to-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
-						Explore Initiatives
-					</a>
-					<a href="#commitment" class="group text-sm font-semibold leading-6 text-zinc-900 dark:text-zinc-100 transition-all duration-300 hover:text-cyan-600">
-						Our Commitment <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-					</a>
-				</div>
+                <div class="mt-10 flex items-center justify-center gap-x-6 relative z-10 animate-fade-up delay-300">
+                    <a href="#about" class="rounded-full bg-gradient-to-r from-lime-500 to-cyan-500 px-8 py-3.5 text-sm font-bold text-white shadow-sm hover:scale-105 transition-transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-600">
+                        Learn more
+                    </a>
+                </div>
+
 			</div>
 		</div>
 
         <!-- Scroll Down Indicator -->
-        <div class="absolute bottom-4 sm:bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-            <a href="#education" aria-label="Scroll to content">
-                <svg class="w-6 h-6 text-zinc-500 dark:text-zinc-400 opacity-75 hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </a>
-        </div>
+        <a href="#education" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 animate-bounce flex flex-col items-center gap-2 cursor-pointer transition-opacity hover:opacity-80">
+            <span class="text-[10px] sm:text-xs font-mono text-zinc-500 uppercase tracking-widest">Explore</span>
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </a>
+	</section>
 	</section>
 
 	<section id="education" class="py-16 sm:py-24 bg-zinc-50 dark:bg-zinc-900/50">
 		<div class="mx-auto max-w-7xl px-6 lg:px-8">
 			<div class="mx-auto max-w-2xl text-center">
-				<h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">Education & Insights</h2>
+				<h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">Engineering Intelligence</h2>
 				<p class="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-					Workshops, articles, and resources to help you build sustainable tech.
+					Workshops, architectural patterns, and resources for the modern stack.
 				</p>
 			</div>
 			<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -57,33 +56,45 @@ import workshop3 from '../assets/workshop-3.png';
 					<div class="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-lime-500 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 					<article class="flex flex-col relative isolate overflow-hidden rounded-2xl border border-lime-200 bg-white dark:border-lime-800 dark:bg-zinc-900 h-full group-hover:border-transparent">
 						<div class="relative w-full h-48 bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
-	                        <Image src={workshop1} alt="Website carbon footprint illustration" class="h-full w-full object-cover blur-sm opacity-50" />
+	                        <Image src={card1} alt="Sustainable system design illustration" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" widths={[400, 800]} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
 						</div>
-	                     <div class="absolute inset-0 flex items-center justify-center bg-zinc-50/50 backdrop-blur-[1px] dark:bg-zinc-950/50">
-	                        <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm dark:bg-zinc-800 dark:text-zinc-300">Coming Soon</span>
-	                    </div>
+                        <div class="flex flex-col p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-lime-700 dark:text-lime-500">Efficient Architectures</span>
+                            <h3 class="mt-2 text-xl font-bold text-zinc-900 dark:text-zinc-50">Sustainable System Design</h3>
+                            <p class="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                                Learn to build cloud-native applications that minimize server load and reduce digital carbon footprints through optimized architectural patterns.
+                            </p>
+                        </div>
 					</article>
 				</div>
 				<div class="group relative h-full rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 					<div class="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-lime-500 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 					<article class="flex flex-col relative isolate overflow-hidden rounded-2xl border border-lime-200 bg-white dark:border-lime-800 dark:bg-zinc-900 h-full group-hover:border-transparent">
 						<div class="relative w-full h-48 bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
-	                        <Image src={workshop2} alt="Sustainable hardware lifecycle illustration" class="h-full w-full object-cover blur-sm opacity-50" />
+	                        <Image src={card2} alt="Engineering for the planet illustration" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" widths={[400, 800]} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
 						</div>
-	                     <div class="absolute inset-0 flex items-center justify-center bg-zinc-50/50 backdrop-blur-[1px] dark:bg-zinc-950/50">
-	                        <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm dark:bg-zinc-800 dark:text-zinc-300">Coming Soon</span>
-	                    </div>
+                        <div class="flex flex-col p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-lime-700 dark:text-lime-500">Ecosystem Thinking</span>
+                            <h3 class="mt-2 text-xl font-bold text-zinc-900 dark:text-zinc-50">Engineering for the Planet</h3>
+                            <p class="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                                Why we believe "green" isn't just a color, but a performance metric. Join our journey in redefining what "modern engineering" means.
+                            </p>
+                        </div>
 					</article>
 				</div>
 				<div class="group relative h-full rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 					<div class="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-lime-500 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 					<article class="flex flex-col relative isolate overflow-hidden rounded-2xl border border-lime-200 bg-white dark:border-lime-800 dark:bg-zinc-900 h-full group-hover:border-transparent">
 						<div class="relative w-full h-48 bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
-	                        <Image src={workshop3} alt="Green coding guide illustration" class="h-full w-full object-cover blur-sm opacity-50" />
+	                        <Image src={card3} alt="Green intelligence illustration" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" widths={[400, 800]} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
 						</div>
-	                     <div class="absolute inset-0 flex items-center justify-center bg-zinc-50/50 backdrop-blur-[1px] dark:bg-zinc-950/50">
-	                        <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm dark:bg-zinc-800 dark:text-zinc-300">Coming Soon</span>
-	                    </div>
+                        <div class="flex flex-col p-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-lime-700 dark:text-lime-500">Ethical AI</span>
+                            <h3 class="mt-2 text-xl font-bold text-zinc-900 dark:text-zinc-50">Green Intelligence</h3>
+                            <p class="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                                Exploring the intersection of local LLMs and efficiency—how to leverage AI-driven tools without the massive environmental overhead of traditional models.
+                            </p>
+                        </div>
 					</article>
 				</div>
 			</div>
@@ -93,57 +104,81 @@ import workshop3 from '../assets/workshop-3.png';
     <section id="services" class="py-16 sm:py-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center mb-16">
-                <h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">Our Services</h2>
+                <h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">The Ecosystem</h2>
                 <p class="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-                    Expanding our impact with new initiatives coming soon.
+                    A complete suite of solutions for the post-carbon internet.
                 </p>
             </div>
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="group relative h-full rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-lime-500 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                    <div class="relative overflow-hidden rounded-2xl border border-lime-200 bg-white p-8 dark:border-lime-800 dark:bg-zinc-900 h-full flex flex-col group-hover:border-transparent">
+                    <div class="relative overflow-hidden rounded-2xl border border-lime-200 bg-gradient-to-br from-white to-lime-50/50 p-8 dark:border-lime-800 dark:bg-gradient-to-br dark:from-zinc-900 dark:to-lime-950/30 h-full flex flex-col group-hover:border-lime-300 dark:group-hover:border-lime-700 transition-colors">
                         <div class="flex items-center gap-4">
-                            <div class="rounded-lg bg-zinc-100 p-2 dark:bg-zinc-800">
-                                <svg class="h-6 w-6 text-zinc-600 dark:text-zinc-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>
+                            <div class="rounded-lg bg-lime-100 p-2 dark:bg-lime-900/30">
+                                <svg class="h-6 w-6 text-lime-700 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>
                             </div>
-                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Tech Solutions</h3>
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Architecture & Consulting</h3>
                         </div>
-                        <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Consulting on green tech architecture and sustainable software development.</p>
-                        <div class="absolute inset-0 flex items-center justify-center bg-zinc-50/50 backdrop-blur-[1px] dark:bg-zinc-950/50">
-                            <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm dark:bg-zinc-800 dark:text-zinc-300">Coming Soon</span>
-                        </div>
+                        <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Enterprise-grade reviews and sustainable systems design.</p>
+
                     </div>
                 </div>
 
                  <div class="group relative h-full rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-lime-500 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                     <div class="relative overflow-hidden rounded-2xl border border-lime-200 bg-white p-8 dark:border-lime-800 dark:bg-zinc-900 h-full flex flex-col group-hover:border-transparent">
+                      <div class="relative overflow-hidden rounded-2xl border border-lime-200 bg-gradient-to-br from-white to-lime-50/50 p-8 dark:border-lime-800 dark:bg-gradient-to-br dark:from-zinc-900 dark:to-lime-950/30 h-full flex flex-col group-hover:border-lime-300 dark:group-hover:border-lime-700 transition-colors">
                         <div class="flex items-center gap-4">
-                            <div class="rounded-lg bg-zinc-100 p-2 dark:bg-zinc-800">
-                                <svg class="h-6 w-6 text-zinc-600 dark:text-zinc-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>
+                            <div class="rounded-lg bg-lime-100 p-2 dark:bg-lime-900/30">
+                                <svg class="h-6 w-6 text-lime-700 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>
                             </div>
                             <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Community Meetups</h3>
                         </div>
                         <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Regular gatherings to share knowledge and network.</p>
-                         <div class="absolute inset-0 flex items-center justify-center bg-zinc-50/50 backdrop-blur-[1px] dark:bg-zinc-950/50">
-                            <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm dark:bg-zinc-800 dark:text-zinc-300">Coming Soon</span>
-                        </div>
+
                     </div>
                 </div>
 
                  <div class="group relative h-full rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-lime-500 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                     <div class="relative overflow-hidden rounded-2xl border border-lime-200 bg-white p-8 dark:border-lime-800 dark:bg-zinc-900 h-full flex flex-col group-hover:border-transparent">
+                     <div class="relative overflow-hidden rounded-2xl border border-lime-200 bg-gradient-to-br from-white to-lime-50/50 p-8 dark:border-lime-800 dark:bg-gradient-to-br dark:from-zinc-900 dark:to-lime-950/30 h-full flex flex-col group-hover:border-lime-300 dark:group-hover:border-lime-700 transition-colors">
                         <div class="flex items-center gap-4">
-                            <div class="rounded-lg bg-zinc-100 p-2 dark:bg-zinc-800">
-                                <svg class="h-6 w-6 text-zinc-600 dark:text-zinc-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
+                            <div class="rounded-lg bg-lime-100 p-2 dark:bg-lime-900/30">
+                                <svg class="h-6 w-6 text-lime-700 dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
                             </div>
                             <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Eco-Merchandise</h3>
                         </div>
-                        <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Sustainable products for the eco-conscious techie.</p>
-                         <div class="absolute inset-0 flex items-center justify-center bg-zinc-50/50 backdrop-blur-[1px] dark:bg-zinc-950/50">
-                            <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm dark:bg-zinc-800 dark:text-zinc-300">Coming Soon</span>
-                        </div>
+                        <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Zero-waste gear and digital assets for the movement.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="relative isolate overflow-hidden bg-white dark:bg-zinc-950 py-24 sm:py-32">
+        <div class="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-zinc-950 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:bg-[radial-gradient(#27272a_1px,transparent_1px)]"></div>
+         <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">About <span class="text-lime-700 dark:text-lime-500">green</span><span class="font-normal text-zinc-900 dark:text-zinc-50">adda</span></h2>
+                <div class="mt-8 flex flex-col gap-8 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
+                    <p>
+                        We are a collective of engineers, designers, and strategists dedicated to decoupling technological progress from environmental impact. 
+                        In an era where digital consumption rivals the aviation industry in carbon emissions, we believe that <span class="bg-gradient-to-r from-lime-500 to-cyan-500 bg-clip-text text-transparent font-semibold">efficiency is the ultimate form of sustainability</span>.
+                    </p>
+                    <p>
+                        <span class="font-bold text-lime-700 dark:text-lime-500">green</span><span class="font-normal text-zinc-900 dark:text-zinc-50">adda</span> exists to provide the infrastructure, knowledge, and community required to build the post-carbon internet. 
+                        We don't just advocate for change; we engineer it.
+                    </p>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
+                    <div class="border-l border-lime-500 pl-6">
+                        <h3 class="font-semibold text-zinc-900 dark:text-zinc-50">Our Mission</h3>
+                        <p class="mt-2 text-zinc-600 dark:text-zinc-400">To maximize the utility of every watt consumed by the digital economy.</p>
+                    </div>
+                    <div class="border-l border-cyan-500 pl-6">
+                        <h3 class="font-semibold text-zinc-900 dark:text-zinc-50">Our Vision</h3>
+                        <p class="mt-2 text-zinc-600 dark:text-zinc-400">A world where high-performance software and zero-carbon infrastructure are synonymous.</p>
                     </div>
                 </div>
             </div>
@@ -159,8 +194,9 @@ import workshop3 from '../assets/workshop-3.png';
         <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
-                <h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">Sustainable by Design</h2>
-                    This website is crafted to be lightweight and efficient. Our approach drastically reduces data transfer and energy consumption on your device, adhering to low-carbon web development principles.
+                <h2 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">Engineered for Zero Waste</h2>
+                <p class="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
+                    Precision is our product. This platform is a living example of low-carbon engineering—lightweight, efficient, and performance-first.
                 </p>
                 <dl class="mt-8 flex gap-8">
                      <div class="flex flex-col gap-1">
